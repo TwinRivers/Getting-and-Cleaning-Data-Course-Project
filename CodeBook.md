@@ -67,11 +67,13 @@ The following outline the steps run in the run_analysis.R Script to process the 
 3. The Train data sets files X_Train, y_train and subject_train are cleansed
     * 3.1 X_train colmn names are renamed to the features for better understaning
         * Requirement # 4  - Appropriately labels the data set with descriptive variable names.
-    * 3.2 subset to keep onoy the mean and std measures
+    * 3.2 subset to keep only the mean and std measures from features file
     * 3.3 rename the Y_train column names  better understaning of the column data
         * Requirement # 3 - Uses descriptive activity names to name the activities in the data set
+        * new lables are "Activity_ID", "Activity_Label"
     * 3.4 rename the subject_train column names  better understaning of the column data
      * Requirement # 3 - Uses descriptive activity names to name the activities in the data set
+     * new lable "subject"
 4. The Test data sets files X_test,  y_test, and subject_test are cleansed
     * Same process flow as train above
 5. Merge files 
@@ -80,8 +82,8 @@ The following outline the steps run in the run_analysis.R Script to process the 
     * 5.3 Merges the training and the test sets to create one data set.
     * 5.4 Melt -stacks the measurement columns into a single column of data.
         * Requirement # 1 Merges the training and the test sets to create one data set.  
-6. Create the tiday_data file
-7. Write the tiday_data file to the working directory
+6. Create the tidy_data file
+7. Write the tidy_data file to the working directory
     * Requirement # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
    
 
